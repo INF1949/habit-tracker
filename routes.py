@@ -61,7 +61,7 @@ def add_habit():
            {"_id" : uuid.uuid4().hex,  "added" : today, "name" : request.form.get("habit") }
        )
 
-    return render_template(d:dd
+    return render_template(
         "add_habit.html",
         title="Habit Tracker - Add Habit",
         selected_date=today,
